@@ -1,0 +1,51 @@
+{
+"projects": [
+    {
+        "id": "0"   ,
+        "project_name": "Quote Generator",
+        "description":       ,
+        "technologies": "JavaScript",
+        "live_link":           ,
+        "github_link":         ,
+        "image_urls": ["/public/imgages/randQuoteMain.png", "/public/imgages/randQuote.png", "/public/imgages/randQuote2.png"]
+    },
+    {
+        "id": "1"     ,
+        "project_name": "Data Pagination",
+        "description":       ,
+        "technologies": "JavaScript",
+        "live_link":           ,
+        "github_link":         ,
+        "image_urls": ["/public/imgages/DataPaginationMain.png", "/public/imgages/paginationOne.png", "/public/imgages/paginationTwo.png", "/public/imgages/paginationThree.png"]
+    },
+    {
+        "id":  "2"    ,
+        "project_name": "Form Registration",
+        "description":       ,
+        "technologies": "JavaScript, CSS",
+        "live_link":           ,
+        "github_link":         ,
+        "image_urls": ["/public/imgages/formRegistration.png", "/public/imgages/formRegOne.png", "/public/imgages/formRegTwo.png"]
+    },
+    {
+        "id":  "3"    ,
+        "project_name": "Phrase Hunter/Modules",
+        "description":       ,
+        "technologies": "JavaScript, CSS, AJAX, API",
+        "live_link":           ,
+        "github_link":         ,
+        "image_urls": ["/public/imgages/phraseHunter.png", "/public/imgages/phraseHunter1.png", "/public/imgages/phraseHunter2.png"]
+    },
+    {
+        "id":  "4"    ,
+        "project_name": "Public API",
+        "description":       ,
+        "technologies": "JavaScript, CSS, AJAX, API",
+        "live_link":           ,
+        "github_link":         ,
+        "image_urls": ["/public/imgages/publicAPI.png", "/public/imgages/publicAPI2.png"]
+    }
+ ]
+}
+
+

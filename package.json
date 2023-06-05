@@ -1,15 +1,20 @@
 {
   "name": "static_node-v1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My portfolio",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Giles Lewey",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
   }
 }
+
+
