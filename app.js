@@ -7,7 +7,6 @@ const app = express();
 
 const data = require('./data.json');
 
-app.listen(3000);
 
 app.use('/static', express.static('public'));
 
