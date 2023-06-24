@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+
+    article.portfolio-about
+        .error-other
+            .error-image
+                img(src='/static/img/wt_error.png' alt='500 error')
+            .error-info
+                h3 Error: #{error.status} --- #{error.message}
+                p Stack Trace: #{error.stack}

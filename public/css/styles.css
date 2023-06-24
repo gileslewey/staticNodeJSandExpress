@@ -51,7 +51,8 @@ h6{
 
 p{
   font-size: 15px;
-  color: #666;
+  /* color: #666; */
+  color: red;
 }
 
 a {

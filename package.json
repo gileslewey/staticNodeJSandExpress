@@ -9,6 +9,7 @@
   "author": "Giles Lewey",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "pug": "^3.0.2"
   },
@@ -16,5 +17,3 @@
     "pm2": "^5.3.0"
   }
 }
-
-
