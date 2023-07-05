@@ -14,20 +14,36 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index', projects);
+   res.render('index', { projects } );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about', projects);
+    res.render('about',  { projects } );
 });
 
 app.get('/project/:id', (req, res) => {
-    const id = req.params.id;
-    res.render('project', { projects, id: req.params.id } );
-})
+    // const { id } = req.params.id; //needed?
+    // const project = projects[id];
+    // console.log(project);
+    // // const {technologies} = project;
+    // // const {image_urls} = project;
+
+    // res.render('project', { projects, id } );
+    const { id } = req.params; 
+    const projectData = projects[id]; 
+    const {project_name} = projectData;
+    const {description} = projectData;
+    const {technologies} = projectData;
+    const {live_link} = projectData;
+    const {github_link} = projectData;
+    const {image_urls} = projectData;
+    const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
+
+    res.render('project', templateData);
+});
 
 app.get('/layout', (req, res) => {
-    res.render('layout', projects);
+    res.render('layout', { projects } );
 });
 
 //error handling 
