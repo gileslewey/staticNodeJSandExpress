@@ -22,13 +22,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project/:id', (req, res) => {
-    // const { id } = req.params.id; //needed?
-    // const project = projects[id];
-    // console.log(project);
-    // // const {technologies} = project;
-    // // const {image_urls} = project;
 
-    // res.render('project', { projects, id } );
     const { id } = req.params; 
     const projectData = projects[id]; 
     const {project_name} = projectData;

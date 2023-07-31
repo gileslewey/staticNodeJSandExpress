@@ -6,21 +6,31 @@ block content
 
     h1 My Portfolio
 
-    p Here are some of the projects I have been working on. 
+    p Websites
+      article.portfolio-project-thumbs
+        .projects-box.box.grid
+          .webcell
+            a(href='https://www.characterwork.com')
+              img.thumbnail(src='/static/images/ccbl.png', alt='Photo of Giles')
+              h5 characterwork.com
+
+            a(href=`https://www.mtdwi.com`)
+              img.thumbnail(src='/static/images/mtdwi.png', alt='mtdwi.com site image')
+              h5 mtdwi.com
+          
+    p Here are some of the javascript projects I have been working on. 
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-      
+
       each project in projects 
         .cell
               a(href=`/project/${project.id}`)
                 img.thumbnail(src=`${project.image_urls[0]}`, alt=`${project.project_name}`)
                 h5 #{project.project_name}
 
-              //- a(href=`/project/${project.id}`)
-              //- img.thumbnail(src=`/static/img/${project.image_urls[0]}`, alt=`Thumbnail for ${project.project_name}`)
-              //- h5 #{project.project_name}
+
 
 
 
