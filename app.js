@@ -64,7 +64,6 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("App is running on local:3000!");
-});
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
