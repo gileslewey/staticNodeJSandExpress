@@ -64,7 +64,8 @@ app.use((err, req, res, next) => {
     }
 });
 
-app.listen(`0.0.0.0:$PORT` () => {
-    console.log("App is running on ${PORT}");
-});
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function () {
+    // ...
+  });
 
