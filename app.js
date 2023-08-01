@@ -65,11 +65,9 @@ app.use((err, req, res, next) => {
 });
 
 
+app.listen(4000, () => console.log(`Server running on port ${PORT}`));
 
-const port = process.env.PORT || 3000;
 
-// Listen on `port` and 0.0.0.0
-app.listen(port, "0.0.0.0", function () {
-  // ...
-});
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
