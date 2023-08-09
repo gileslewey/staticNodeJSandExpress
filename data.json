@@ -46,11 +46,6 @@
         "github_link": "https://github.com/gileslewey/publicAPI",
         "image_urls": ["/static/images/publicAPI.png", "/static/images/publicAPI2.png"]
     },
-    { "id":  "5",
-    "live_link": "https://characterwork.com",
-    "github_link": "",
-    "image_urls": ["/static/images/ccbl.png", "/static/images/publicAPI2.png"]
-    }
   ]
  }
 }
