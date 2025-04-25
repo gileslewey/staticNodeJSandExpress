@@ -3,21 +3,12 @@
     "projects": [
     {
         "id": "0",
-        "project_name": "Quote Generator",
-        "description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-        "technologies": "HTML, CSS, JavaScript",
-        "live_link": "https://gileslewey.github.io/project-0/index.html",
-        "github_link": "https://github.com/gileslewey/a_random_quote_generator-v1",
-        "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
-    },
-    {
-        "id": "1",
-        "project_name": "Data Pagination",
-        "description": "A list of students which paginates to more students",
-        "technologies": "JavaScript",
-        "live_link": "https://gileslewey.github.io/project-1/index.html",
-        "github_link": "https://github.com/gileslewey/data-pagination-and-filtering-v1",
-        "image_urls": ["/static/images/DataPaginationMain.png", "/static/images/paginationOne.png", "/static/imgages/paginationTwo.png", "/public/images/paginationThree.png"]
+        "project_name": "Flashcards",
+        "description": "Express Flashcards App",
+        "technologies": "Node.js, Express, Pug.js",
+        "live_link": "https://gileslewey.github.io/project-4/index.html",
+        "github_link": "https://github.com/gileslewey/publicAPI",
+        "image_urls": ["/static/images/flashcard.png"]
     },
     {
         "id":  "2",
@@ -48,15 +39,16 @@
     },
     {
         "id":  "5",
-        "project_name": "Flashcards",
-        "description": "Express Flashcards App",
-        "technologies": "Node.js, Express, Pug.js",
-        "live_link": "https://gileslewey.github.io/project-4/index.html",
-        "github_link": "https://github.com/gileslewey/publicAPI",
-        "image_urls": ["/static/images/flashcard.png"]
+        "project_name": "Quote Generator",
+        "description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+        "technologies": "HTML, CSS, JavaScript",
+        "live_link": "https://gileslewey.github.io/project-0/index.html",
+        "github_link": "https://github.com/gileslewey/a_random_quote_generator-v1",
+        "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
     }
+
+
   ]
  }
 }
-
 
