@@ -7,18 +7,20 @@ const app = express();
 
 const { data }  = require('./data.json');
 
-const  projects  = data;
+const { projects } = data;
+
+const { design } = data;
 
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index',  projects  );
+   res.render('index', { projects } );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about',   projects  );
+    res.render('about',  { projects } );
 });
 
 app.get('/project/:id', (req, res) => {
@@ -39,16 +41,16 @@ app.get('/project/:id', (req, res) => {
 app.get('/design', (req, res) => {
 
     const { id } = req.params; 
-    const projectData = projects[id]; 
-    const {project_name} = projectData;
-    const {description} = projectData;
-    const {technologies} = projectData;
-    const {live_link} = projectData;
-    const {github_link} = projectData;
-    const {image_urls} = projectData;
-    const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
+    const designData = design[id]; 
+    const {project_name} = designData;
+    const {description} = designData;
+    const {technologies} = designData;
+    const {live_link} = designData;
+    const {github_link} = designData;
+    const {image_urls} = designData;
+    const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
 
-    res.render('design', templateData);
+    res.render('design', templateDesignData);
 });
 
 app.get('/layout', (req, res) => {
