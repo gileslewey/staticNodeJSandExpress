@@ -36,6 +36,21 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 });
 
+app.get('/design/:id', (req, res) => {
+
+    const { id } = req.params; 
+    const projectData = projects[id]; 
+    const {project_name} = projectData;
+    const {description} = projectData;
+    const {technologies} = projectData;
+    const {live_link} = projectData;
+    const {github_link} = projectData;
+    const {image_urls} = projectData;
+    const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
+
+    res.render('design', templateData);
+});
+
 app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });

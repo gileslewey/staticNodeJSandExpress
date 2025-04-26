@@ -3,12 +3,21 @@
     "projects": [
     {
         "id": "0",
-        "project_name": "Flashcards",
-        "description": "Express Flashcards App",
-        "technologies": "Node.js, Express, Pug.js",
-        "live_link": "https://gileslewey.github.io/project-4/index.html",
-        "github_link": "https://github.com/gileslewey/publicAPI",
-        "image_urls": ["/static/images/flashcard.png"]
+        "project_name": "Quote Generator",
+        "description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+        "technologies": "HTML, CSS, JavaScript",
+        "live_link": "https://gileslewey.github.io/project-0/index.html",
+        "github_link": "https://github.com/gileslewey/a_random_quote_generator-v1",
+        "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+    },
+    {
+        "id": "1",
+        "project_name": "Data Pagination",
+        "description": "A list of students which paginates to more students",
+        "technologies": "JavaScript",
+        "live_link": "https://gileslewey.github.io/project-1/index.html",
+        "github_link": "https://github.com/gileslewey/data-pagination-and-filtering-v1",
+        "image_urls": ["/static/images/DataPaginationMain.png", "/static/images/paginationOne.png", "/static/imgages/paginationTwo.png", "/public/images/paginationThree.png"]
     },
     {
         "id":  "2",
@@ -39,16 +48,71 @@
     },
     {
         "id":  "5",
+        "project_name": "Flashcards",
+        "description": "Express Flashcards App",
+        "technologies": "Node.js, Express, Pug.js",
+        "live_link": "https://gileslewey.github.io/project-4/index.html",
+        "github_link": "https://github.com/gileslewey/publicAPI",
+        "image_urls": ["/static/images/flashcard.png"]
+    }
+  ],
+  "design": [
+    {
+        "id": "0",
         "project_name": "Quote Generator",
         "description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
         "technologies": "HTML, CSS, JavaScript",
         "live_link": "https://gileslewey.github.io/project-0/index.html",
         "github_link": "https://github.com/gileslewey/a_random_quote_generator-v1",
         "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+    },
+    {
+        "id": "1",
+        "project_name": "Data Pagination",
+        "description": "A list of students which paginates to more students",
+        "technologies": "JavaScript",
+        "live_link": "https://gileslewey.github.io/project-1/index.html",
+        "github_link": "https://github.com/gileslewey/data-pagination-and-filtering-v1",
+        "image_urls": ["/static/images/DataPaginationMain.png", "/static/images/paginationOne.png", "/static/imgages/paginationTwo.png", "/public/images/paginationThree.png"]
+    },
+    {
+        "id":  "2",
+        "project_name": "Form Registration",
+        "description": "A webform using data validation",
+        "technologies": "JavaScript, CSS",
+        "live_link": "https://gileslewey.github.io/project-2/index.html",
+        "github_link": "https://github.com/gileslewey/interactive-form-v3",
+        "image_urls": ["/static/images/formRegistration.png", "/static/images/formRegOne.png", "/static/images/formRegTwo.png"]
+    },
+    {
+        "id":  "3",
+        "project_name": "Phrase Hunter/Modules",
+        "description": "A browser-based phrase guessing game",
+        "technologies": "JavaScript, CSS, AJAX, API",
+        "live_link": "https://gileslewey.github.io/project-3/index.html",
+        "github_link":  "https://github.com/gileslewey/oopv2",
+        "image_urls": ["/static/images/phraseHunter.png", "/static/images/phraseHunter1.png", "/static/images/phraseHunter2.png"]
+    },
+    {
+        "id":  "4",
+        "project_name": "Public API",
+        "description": "An employee directory using public API requests",
+        "technologies": "JavaScript, CSS, AJAX, API",
+        "live_link": "https://gileslewey.github.io/project-4/index.html",
+        "github_link": "https://github.com/gileslewey/publicAPI",
+        "image_urls": ["/static/images/publicAPI.png", "/static/images/publicAPI2.png"]
+    },
+    {
+        "id":  "5",
+        "project_name": "Flashcards",
+        "description": "Express Flashcards App",
+        "technologies": "Node.js, Express, Pug.js",
+        "live_link": "https://gileslewey.github.io/project-4/index.html",
+        "github_link": "https://github.com/gileslewey/publicAPI",
+        "image_urls": ["/static/images/flashcard.png"]
     }
-
-
   ]
  }
 }
+
 
