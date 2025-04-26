@@ -34,7 +34,7 @@ app.get('/project/:id', (req, res) => {
     const {github_link} = projectData;
     const {image_urls} = projectData;
     const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
-
+    console.log(templateData);
     res.render('project', templateData);
 });
 
