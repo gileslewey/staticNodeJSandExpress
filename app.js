@@ -39,7 +39,7 @@ app.get('/project/:id', (req, res) => {
 app.get('/design', (req, res) => {
 
     const { id } = req.params; 
-    const projectData = projects[id]; 
+    const projectData = design[id]; 
     const {project_name} = projectData;
     const {description} = projectData;
     const {technologies} = projectData;
