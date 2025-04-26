@@ -38,7 +38,7 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 });
 
-app.get('/design', (req, res) => {
+app.get('/design/:id', (req, res) => {
 
     const { id } = req.params; 
     const designData = design[id]; 
