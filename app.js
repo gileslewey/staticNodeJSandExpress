@@ -11,6 +11,7 @@ const { projects } = data;
 
 const { design } = data;
 
+const { id } = req.params; 
 const designData = design[id]; 
 const {project_name} = designData;
 const {description} = designData;
