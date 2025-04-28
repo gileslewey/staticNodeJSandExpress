@@ -56,7 +56,7 @@
         "image_urls": ["/static/images/flashcard.png"]
     }
   ],
-  "design": [
+  "designs": [
     {
         "id": "0",
         "project_name": "Quote Generator",
