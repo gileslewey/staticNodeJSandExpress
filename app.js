@@ -11,15 +11,6 @@ const { projects } = data;
 
 const { design } = data;
 
-const { id } = req.params; 
-const designData = design[id]; 
-const {project_name} = designData;
-const {description} = designData;
-const {technologies} = designData;
-const {live_link} = designData;
-const {github_link} = designData;
-const {image_urls} = designData;
-const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
 
 app.use('/static', express.static('public'));
 
