@@ -56,7 +56,7 @@ app.get('/project/:id', (req, res) => {
 // });
 
 app.get('/layout', (req, res) => {
-    res.locals.templateData = {project_name, description, technologies, live_link, github_link, image_urls};
+    // res.locals.templateData = {project_name, description, technologies, live_link, github_link, image_urls};
     res.render('layout', { projects } );
 });
 
