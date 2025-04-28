@@ -40,20 +40,20 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 });
 
-app.get('/design/:id', (req, res) => {
+// app.get('/design/:id', (req, res) => {
 
-    const { id } = req.params; 
-    console.log( {id} );
-    const designData = designs[id]; 
-    const {project_name} = designData;
-    const {description} = designData;
-    const {technologies} = designData;
-    const {live_link} = designData;
-    const {github_link} = designData;
-    const {image_urls} = designData;
-    const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
-    res.render('design'. templateDesignData);
-});
+//     const { id } = req.params; 
+//     console.log( {id} );
+//     const designData = designs[id]; 
+//     const {project_name} = designData;
+//     const {description} = designData;
+//     const {technologies} = designData;
+//     const {live_link} = designData;
+//     const {github_link} = designData;
+//     const {image_urls} = designData;
+//     const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
+//     res.render('design'. templateDesignData);
+// });
 
 app.get('/layout', (req, res) => {
     res.locals.templateData = {project_name, description, technologies, live_link, github_link, image_urls};
