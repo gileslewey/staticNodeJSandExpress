@@ -11,7 +11,6 @@ const { projects } = data;
 
 const { designs } = data;
 
-app.use()
 
 
 app.use('/static', express.static('public'));
@@ -45,7 +44,7 @@ app.get('/design/:id', (req, res) => {
 
     const { id } = req.params; 
     console.log( {id} );
-    const designData = design[id]; 
+    const designData = designs[id]; 
     const {project_name} = designData;
     const {description} = designData;
     const {technologies} = designData;
