@@ -9,7 +9,9 @@ const { data }  = require('./data.json');
 
 const { projects } = data;
 
-const { design } = data;
+const { designs } = data;
+
+app.use()
 
 
 app.use('/static', express.static('public'));
