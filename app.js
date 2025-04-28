@@ -11,6 +11,15 @@ const { projects } = data;
 
 const { design } = data;
 
+const designData = design[id]; 
+const {project_name} = designData;
+const {description} = designData;
+const {technologies} = designData;
+const {live_link} = designData;
+const {github_link} = designData;
+const {image_urls} = designData;
+const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
+
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
@@ -38,22 +47,23 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 });
 
-// app.get('/design', (req, res) => {
+app.get('/design/:id', (req, res) => {
 
-//     const { id } = req.params; 
-//     const designData = design[id]; 
-//     const {project_name} = designData;
-//     const {description} = designData;
-//     const {technologies} = designData;
-//     const {live_link} = designData;
-//     const {github_link} = designData;
-//     const {image_urls} = designData;
-//     const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
-//     console.log(templateDesignData);
-//     res.render('design');
-// });
+    const { id } = req.params; 
+    const designData = design[id]; 
+    const {project_name} = designData;
+    const {description} = designData;
+    const {technologies} = designData;
+    const {live_link} = designData;
+    const {github_link} = designData;
+    const {image_urls} = designData;
+    const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
+    console.log(templateDesignData);
+    res.render('design');
+});
 
 app.get('/layout', (req, res) => {
+    res.locals.templateData = {project_name, description, technologies, live_link, github_link, image_urls};
     res.render('layout', { projects } );
 });
 
