@@ -36,7 +36,6 @@ app.get('/project/:id', (req, res) => {
     const {github_link} = projectData;
     const {image_urls} = projectData;
     const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
-    console.log(templateData);
     res.render('project', templateData);
 });
 
@@ -56,8 +55,7 @@ app.get('/project/:id', (req, res) => {
 // });
 
 app.get('/layout', (req, res) => {
-    // res.locals.templateData = {project_name, description, technologies, live_link, github_link, image_urls};
-    res.render('layout', { projects } );
+    res.render('layout', projects);
 });
 
 //error handling 
