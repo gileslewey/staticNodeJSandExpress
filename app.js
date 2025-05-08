@@ -12,14 +12,14 @@ const { projects }  = data;
 
 console.log(projects);
 // const { designs } = data.designs;
-
+// console.log(designs)
 if (!Array.isArray(projects) || projects.length === 0) {
     console.error("Error: 'projects' is not defined or is empty in data.json");
 }
 
-// if (!Array.isArray(designs)) {
-//     console.error("Error: 'designs' is not defined or is not an array in data.json");
-// }
+if (!Array.isArray(designs)) {
+    console.error("Error: 'designs' is not defined or is not an array in data.json");
+}
 
 app.use('/static', express.static('public'));
 
