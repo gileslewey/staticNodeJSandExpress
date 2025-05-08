@@ -37,6 +37,10 @@ app.get('/project/:id', (req, res) => {
 
     const { id } = req.params; 
     const projectData = projects[id]; 
+    console.log(projectData);
+    if (!projectData) {
+        return res.status(404).render('error', { error: 'Project not found' });
+    }
     const {project_name} = projectData;
     const {description} = projectData;
     const {technologies} = projectData;
