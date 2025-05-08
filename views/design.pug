@@ -1,11 +1,9 @@
 extends layout.pug
 
-block design
-
-    article.portfolio-project-thumbs
-      .projects-box.box.grid
-        each design in designs
-          .cell
-            a(href=`/design/${design.id}`)
-            img.thumbnail(src=`${design.image_urls[0]}`, alt=`${design.project_name}`)
-            h5 #{design.project_name}
+    //- article.portfolio-project-thumbs
+    //-   .projects-box.box.grid
+    //-     each design in designs
+    //-       .cell
+    //-         a(href=`/design/${design.id}`)
+    //-         img.thumbnail(src=`${design.image_urls[0]}`, alt=`${design.project_name}`)
+    //-         h5 #{design.project_name}
