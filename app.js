@@ -5,10 +5,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 
-const data   = require('./data.json');
+const { data }  = require('./data.json');
 console.log(data);
 
-const projects  = data.projects;
+const { projects }  = data;
 
 console.log(projects);
 // const { designs } = data.designs;
