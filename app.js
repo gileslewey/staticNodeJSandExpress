@@ -26,11 +26,11 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index', { projects } );
+   res.render('index',  projects  );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about',  { projects } );
+    res.render('about',   projects  );
 });
 
 app.get('/project/:id', (req, res) => {
@@ -63,7 +63,7 @@ app.get('/project/:id', (req, res) => {
 // });
 
 app.get('/layout', (req, res) => {
-    res.render('layout', {projects});
+    res.render('layout', projects);
 });
 
 //error handling 
