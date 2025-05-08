@@ -5,11 +5,11 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 
-const { data }  = require('./data.json');
+const data   = require('./data.json');
 
-console.log(data);
 const { projects } = data;
 
+console.log(projects);
 const { designs } = data;
 
 if (!Array.isArray(projects) || projects.length === 0) {
