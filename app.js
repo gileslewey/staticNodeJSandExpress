@@ -7,7 +7,7 @@ const app = express();
 
 const data   = require('./data.json');
 
-const  projects  = data.projects;
+const projects  = data.projects;
 
 console.log(projects);
 // const { designs } = data.designs;
