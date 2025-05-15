@@ -6,12 +6,12 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const { data }  = require('./data.json');
-console.log(data);
+// console.log(data);
 
 const { projects }  = data;
-const { designs }  = data;
+const { design }  = data;
 
-console.log(designs);
+console.log(design);
 // const { designs } = data.designs;
 // console.log(designs)
 if (!Array.isArray(projects) || projects.length === 0) {
