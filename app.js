@@ -8,8 +8,6 @@ const app = express();
 const { data }  = require('./data.json');
 // console.log(data);
 
-const { projects }  = data;
-const { design }  = data;
 
 console.log(design);
 // const { designs } = data.designs;
@@ -27,18 +25,17 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index',  { projects }  );
+   res.render('index',  { data }  );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about',  { projects } );
+    res.render('about',  { data } );
 });
 
 app.get('/project/:id', (req, res) => {
 
     const { id } = req.params; 
-    const projectData = projects[id]; 
-    console.log(projectData);
+    const projectData = data.projects[id]; 
     if (!projectData) {
         return res.status(404).render('error', { error: 'Project not found' });
     }

@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-
+  
   article.portfolio-intro
 
     h1 My Portfolio
@@ -31,7 +31,8 @@ block content
               img.thumbnail(src='static/images/cultureCrop.png', alt='Culture crop sample page')
               h5 Print Design
   
-          
+      const { projects }  = data;
+      const { design }  = data;     
     p Design and Illustration
       article.portfolio-project-thumbs
         .projects-box.box.grid
