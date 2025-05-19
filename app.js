@@ -9,9 +9,7 @@ const { data }  = require('./data.json');
 // console.log(data);
 
 
-console.log(design);
-// const { designs } = data.designs;
-// console.log(designs)
+// const { data } = data.designs;
 if (!Array.isArray(projects) || projects.length === 0) {
     console.error("Error: 'projects' is not defined or is empty in data.json");
 }
