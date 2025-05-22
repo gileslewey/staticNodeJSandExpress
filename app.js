@@ -31,9 +31,9 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project/:id', (req, res) => {
-
     const { id } = req.params; 
     const projectData = data.projects[id]; 
+    const designData = data.designs[id];
     if (!projectData) {
         return res.status(404).render('error', { error: 'Project not found' });
     }
@@ -43,6 +43,14 @@ app.get('/project/:id', (req, res) => {
     const {live_link} = projectData;
     const {github_link} = projectData;
     const {image_urls} = projectData;
+    const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
+
+    const {project_name} = designData;
+    const {description} = designData;
+    const {technologies} = designData;
+    const {live_link} = designData;
+    const {github_link} = designData;
+    const {image_urls} = designData;
     const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
     res.render('project', templateData);
 });
