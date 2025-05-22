@@ -6,17 +6,11 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const { data }  = require('./data.json');
-// console.log(data);
 
-
-// const { data } = data.designs;
 if (!Array.isArray(projects) || projects.length === 0) {
     console.error("Error: 'projects' is not defined or is empty in data.json");
 }
 
-// if (!Array.isArray(designs)) {
-//     console.error("Error: 'designs' is not defined or is not an array in data.json");
-// }
 
 app.use('/static', express.static('public'));
 
@@ -45,30 +39,16 @@ app.get('/project/:id', (req, res) => {
     const {image_urls} = projectData;
     const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
 
-    const {project_name} = designData;
-    const {description} = designData;
-    const {technologies} = designData;
-    const {live_link} = designData;
-    const {github_link} = designData;
-    const {image_urls} = designData;
-    const templateData = {project_name, description, technologies, live_link, github_link, image_urls};
-    res.render('project', templateData);
+    const {design_name} = designData;
+    const {desdescription} = designData;
+    const {destechnologies} = designData;
+    const {deslive_link} = designData;
+    const {desgithub_link} = designData;
+    const {desimage_urls} = designData;
+    const destemplateData = {design_name, desdescription, destechnologies, deslive_link, desgithub_link, desimage_urls};
+    res.render('project', destemplateData);
 });
 
-// app.get('/design/:id', (req, res) => {
-
-//     const { id } = req.params; 
-//     console.log( {id} );
-//     const designData = designs[id]; 
-//     const {project_name} = designData;
-//     const {description} = designData;
-//     const {technologies} = designData;
-//     const {live_link} = designData;
-//     const {github_link} = designData;
-//     const {image_urls} = designData;
-//     const templateDesignData = {project_name, description, technologies, live_link, github_link, image_urls};
-//     res.render('design'. templateDesignData);
-// });
 
 app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
