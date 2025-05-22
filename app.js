@@ -46,7 +46,7 @@ app.get('/project/:id', (req, res) => {
     const {desgithub_link} = designData;
     const {desimage_urls} = designData;
     const destemplateData = {design_name, desdescription, destechnologies, deslive_link, desgithub_link, desimage_urls};
-    res.render('project', destemplateData);
+    res.render('project', {templateData, destemplateData});
 });
 
 
