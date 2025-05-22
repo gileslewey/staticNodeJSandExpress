@@ -7,9 +7,9 @@ const app = express();
 
 const { data }  = require('./data.json');
 
-if (!Array.isArray(projects) || projects.length === 0) {
-    console.error("Error: 'projects' is not defined or is empty in data.json");
-}
+// if (!Array.isArray(projects) || projects.length === 0) {
+//     console.error("Error: 'projects' is not defined or is empty in data.json");
+// }
 
 
 app.use('/static', express.static('public'));
