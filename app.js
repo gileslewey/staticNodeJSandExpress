@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const { data }  = require('./data.json');
-const { dataProjects } = data.projects;
+const  dataProjects  = data.projects;
 // if (!Array.isArray(projects) || projects.length === 0) {
 //     console.error("Error: 'projects' is not defined or is empty in data.json");
 // }
