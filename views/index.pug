@@ -30,9 +30,7 @@ block content
             a(href='gileslewey.com')
               img.thumbnail(src='static/images/cultureCrop.png', alt='Culture crop sample page')
               h5 Print Design
-  
-      const { projects }  = data;
-      const { design }  = data;     
+      
     p Design and Illustration
       article.portfolio-project-thumbs
         .projects-box.box.grid
@@ -47,19 +45,19 @@ block content
 
       article.portfolio-project-thumbs
         .projects-box.box.grid
-          each project in projects 
+          each project in dataProjects 
             .cell
               a(href= `/project/${project.id}`)
               img.thumbnail(src=`${project.image_urls[0]}`, alt= `${project.project_name}`)
               h5 #{project.project_name}
 
-      article.portfolio-project-thumbs
-        .projects-box.box.grid
-          each design in designs 
-            .cell
-              a(href= `/project/${project.id}`)
-              img.thumbnail(src= `${project.image_urls[0]}`, alt= `${project.project_name}`)
-              h5 #{project.project_name}
+      //- article.portfolio-project-thumbs
+      //-   .projects-box.box.grid
+      //-     each design in designs 
+      //-       .cell
+      //-         a(href= `/project/${project.id}`)
+      //-         img.thumbnail(src= `${project.image_urls[0]}`, alt= `${project.project_name}`)
+      //-         h5 #{project.project_name}
 
 
 

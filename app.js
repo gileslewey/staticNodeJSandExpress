@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const { data }  = require('./data.json');
-const { projects } = data;
+const { dataProjects } = data.projects;
 // if (!Array.isArray(projects) || projects.length === 0) {
 //     console.error("Error: 'projects' is not defined or is empty in data.json");
 // }
@@ -17,11 +17,11 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index',  { projects }  );
+   res.render('index',  { dataProjects }  );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about',  { projects } );
+    res.render('about',  { dataProjects } );
 });
 
 app.get('/project/:id', (req, res) => {
@@ -58,7 +58,7 @@ app.get('/project/:id', (req, res) => {
 
 
 app.get('/layout', (req, res) => {
-    res.render('layout', { projects } );
+    res.render('layout', { dataProjects } );
 });
 
 //error handling 
