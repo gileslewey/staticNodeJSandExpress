@@ -18,11 +18,11 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-   res.render('index',  { dataProjects }  );
+   res.render('index',  { projects }  );
 });
 
 app.get('/about', (req, res) => {
-    res.render('about',  { dataProjects } );
+    res.render('about',  { projects } );
 });
 
 app.get('/project/:id', (req, res) => {
