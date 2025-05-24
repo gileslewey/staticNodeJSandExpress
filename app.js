@@ -6,7 +6,8 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const { data }  = require('./data.json');
-const  dataProjects  = data.projects;
+const  { projects }  = data.projects;
+const { designs } = data.designs;
 // if (!Array.isArray(projects) || projects.length === 0) {
 //     console.error("Error: 'projects' is not defined or is empty in data.json");
 // }
@@ -53,7 +54,7 @@ app.get('/project/:id', (req, res) => {
     } else {
         res.render('project', { templateData });
     }
-    res.render('project', {templateData, destemplateData});
+    // res.render('project', {templateData, destemplateData});
 });
 
 
