@@ -8,8 +8,8 @@ const app = express();
 const { data }  = require('./data.json');
 const  projects   = data.projects;
 const  designs  = data.designs;
-console.log(projects);
-console.log(designs);
+// console.log(projects);
+// console.log(designs);
 // if (!Array.isArray(projects) || projects.length === 0) {
 //     console.error("Error: 'projects' is not defined or is empty in data.json");
 // }
@@ -20,6 +20,7 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
+    console.log({ projects })
    res.render('index',  { projects }  );
    console.log({ projects })
 });
