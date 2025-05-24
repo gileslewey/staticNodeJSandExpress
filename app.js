@@ -46,6 +46,13 @@ app.get('/project/:id', (req, res) => {
     const {desgithub_link} = designData;
     const {desimage_urls} = designData;
     const destemplateData = {design_name, desdescription, destechnologies, deslive_link, desgithub_link, desimage_urls};
+    if (designData) {
+        const { design_name, desdescription, destechnologies, deslive_link, desgithub_link, desimage_urls } = designData;
+        const destemplateData = { design_name, desdescription, destechnologies, deslive_link, desgithub_link, desimage_urls };
+        res.render('project', { templateData, destemplateData });
+    } else {
+        res.render('project', { templateData });
+    }
     res.render('project', {templateData, destemplateData});
 });
 
