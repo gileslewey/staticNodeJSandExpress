@@ -21,6 +21,7 @@ app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
    res.render('index',  { projects }  );
+   console.log({ projects })
 });
 
 app.get('/about', (req, res) => {
