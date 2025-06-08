@@ -8,11 +8,11 @@ const app = express();
 const { data }  = require('./data.json');
 const  projects   = data.projects;
 const  designs  = data.designs;
-// console.log(projects);
-// console.log(designs);
-// if (!Array.isArray(projects) || projects.length === 0) {
-//     console.error("Error: 'projects' is not defined or is empty in data.json");
-// }
+console.log(projects);
+console.log(designs);
+if (!Array.isArray(projects) || projects.length === 0) {
+    console.error("Error: 'projects' is not defined or is empty in data.json");
+}
 
 
 app.use('/static', express.static('public'));
