@@ -36,6 +36,9 @@ app.get('/project/:id', (req, res) => {
     if (!projectData) {
         return res.status(404).render('error', { error: 'Project not found' });
     }
+    if (!designData) {
+        return res.status(404).render('error', { error: 'Project not found' });
+    }
     const {project_name} = projectData;
     const {description} = projectData;
     const {technologies} = projectData;
@@ -63,7 +66,7 @@ app.get('/project/:id', (req, res) => {
 
 
 app.get('/layout', (req, res) => {
-    res.render('layout', { dataProjects } );
+    res.render('layout', { projects, designs } );
 });
 
 //error handling 

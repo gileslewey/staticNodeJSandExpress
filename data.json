@@ -60,56 +60,44 @@
         {
           "id": "0",
           "design_name": "Quote Generator",
-          "desdescription": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "destechnologies": "HTML, CSS, JavaScript",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
           "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desgithub_link": "https://github.com/gileslewey/a_random_quote_generator-v1",
           "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
-          "id": "1",
-          "design_name": "Data Pagination",
-          "desdescription": "A list of students which paginates to more students",
-          "destechnologies": "JavaScript",
-          "deslive_link": "https://gileslewey.github.io/project-1/index.html",
-          "desgithub_link": "https://github.com/gileslewey/data-pagination-and-filtering-v1",
-          "desimage_urls": ["/static/images/DataPaginationMain.png", "/static/images/paginationOne.png", "/static/images/paginationTwo.png", "/public/images/paginationThree.png"]
+        "id": "1",
+          "design_name": "Quote Generator",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
+          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+        }, 
+        {
+         "id": "2",
+          "design_name": "Quote Generator",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
+          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
-          "id": "2",
-          "design_name": "Form Registration",
-          "desdescription": "A webform using data validation",
-          "destechnologies": "JavaScript, CSS",
-          "deslive_link": "https://gileslewey.github.io/project-2/index.html",
-          "desgithub_link": "https://github.com/gileslewey/interactive-form-v3",
-          "desimage_urls": ["/static/images/formRegistration.png", "/static/images/formRegOne.png", "/static/images/formRegTwo.png"]
-        },
-        {
-          "id": "3",
-          "design_name": "Phrase Hunter/Modules",
-          "desdescription": "A browser-based phrase guessing game",
-          "destechnologies": "JavaScript, CSS, AJAX, API",
-          "deslive_link": "https://gileslewey.github.io/project-3/index.html",
-          "desgithub_link": "https://github.com/gileslewey/oopv2",
-          "desimage_urls": ["/static/images/phraseHunter.png", "/static/images/phraseHunter1.png", "/static/images/phraseHunter2.png"]
+        "id": "3",
+          "design_name": "Quote Generator",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
+          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
           "id": "4",
-          "design_name": "Public API",
-          "desdescription": "An employee directory using public API requests",
-          "destechnologies": "JavaScript, CSS, AJAX, API",
-          "deslive_link": "https://gileslewey.github.io/project-4/index.html",
-          "desgithub_link": "https://github.com/gileslewey/publicAPI",
-          "desimage_urls": ["/static/images/publicAPI.png", "/static/images/publicAPI2.png"]
+          "design_name": "Quote Generator",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
+          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
           "id": "5",
-          "design_name": "Flashcards",
-          "desdescription": "Express Flashcards App",
-          "destechnologies": "Node.js, Express, Pug.js",
-          "deslive_link": "https://gileslewey.github.io/project-4/index.html",
-          "desgithub_link": "https://github.com/gileslewey/publicAPI",
-          "desimage_urls": ["/static/images/flashcard.png"]
+          "design_name": "Quote Generator",
+          "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
+          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
+          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         }
       ]
     }
