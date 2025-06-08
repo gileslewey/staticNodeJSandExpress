@@ -51,13 +51,13 @@ block content
               img.thumbnail(src=`${project.image_urls[0]}`, alt= `${project.project_name}`)
               h5 #{project.project_name}
 
-      //- article.portfolio-project-thumbs
-      //-   .projects-box.box.grid
-      //-     each design in designs 
-      //-       .cell
-      //-         a(href= `/project/${project.id}`)
-      //-         img.thumbnail(src= `${project.image_urls[0]}`, alt= `${project.project_name}`)
-      //-         h5 #{project.project_name}
+      article.portfolio-project-thumbs
+        .projects-box.box.grid
+          each design in designs 
+            .cell
+              a(href= `/design/${design.id}`)
+              img.thumbnail(src= `${design.image_urls[0]}`, alt= `${design.design}`)
+              h5 #{design.design_name}
 
 
 
