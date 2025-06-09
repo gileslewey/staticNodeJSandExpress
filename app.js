@@ -8,7 +8,7 @@ const app = express();
 const { data }  = require('./data.json');
 const  multi_projects   = data.projects + data.designs;
 console.log(multi_projects);
-c
+
 // console.log(projects);
 // console.log(designs);
 if (!Array.isArray(projects) || projects.length === 0) {
