@@ -75,7 +75,7 @@ app.get('/project/:id', (req, res) => {
 
 
 app.get('/layout', (req, res) => {
-    res.render('layout', { projects, designs } );
+    res.render('layout', { projects } );
 });
 
 //error handling 
