@@ -8,13 +8,16 @@ const app = express();
 const { data }  = require('./data.json');
 const projects = data.projects;
 const designs = data.designs;
-const  multi_projects   = projects + designs;
-console.log(multi_projects);
 
-// console.log(projects);
-// console.log(designs);
+console.log("Projects:", projects);
+console.log("Designs:", designs);
+
 if (!Array.isArray(projects) || projects.length === 0) {
     console.error("Error: 'projects' is not defined or is empty in data.json");
+}
+
+if (!Array.isArray(designs) || designs.length === 0) {
+    console.error("Error: 'designs' is not defined or is empty in data.json");
 }
 
 
@@ -23,9 +26,9 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-    console.log({ projects })
+
    res.render('index',  { projects }  );
-   console.log({ projects })
+
 });
 
 app.get('/about', (req, res) => {
@@ -34,13 +37,16 @@ app.get('/about', (req, res) => {
 
 app.get('/project/:id', (req, res) => {
     const { id } = req.params; 
+    if (!projects[id]) {
+        return res.status(404).render('error', { error: 'Project not found' });
+    }
     const projectData = data.projects[id]; 
     const designData = data.designs[id];
     if (!projectData) {
         return res.status(404).render('error', { error: 'Project not found' });
     }
     if (!designData) {
-        return res.status(404).render('error', { error: 'Project not found' });
+        return res.status(404).render('error', { error: 'Design not found' });
     }
     const {project_name} = projectData;
     const {description} = projectData;
