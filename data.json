@@ -61,43 +61,43 @@
           "id": "0",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
         "id": "1",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         }, 
         {
          "id": "2",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
         "id": "3",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
           "id": "4",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         },
         {
           "id": "5",
           "design_name": "Quote Generator",
           "design_description": "This is a little program that displays a randomly selected humorous quote each time a button is clicked.",
-          "deslive_link": "https://gileslewey.github.io/project-0/index.html",
-          "desimage_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
+          "live_link": "https://gileslewey.github.io/project-0/index.html",
+          "image_urls": ["/static/images/randQuoteMain.png", "/static/images/randQuote.png", "/static/images/randQuote2.png"]
         }
       ]
     }

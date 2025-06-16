@@ -52,11 +52,12 @@ block content
               img.thumbnail(src=`${project.image_urls[0]}`, alt= `${project.project_name}`)
               h5 #{project.project_name}
 
-          //- if projects && projects.length
-          //-   each project in projects
-          //-     li= project.project_name
-          //- else
-          //-   p No projects available.
+          if designs && designs.length
+            each design in designs
+              li= design.design_name
+          else
+            p No designs available.
+          
       //- article.portfolio-project-thumbs
       //-   .projects-box.box.grid
       //-     each design in designs 
