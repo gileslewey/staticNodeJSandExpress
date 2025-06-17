@@ -40,7 +40,7 @@ app.get('/project/:id', (req, res) => {
     if (!projects[id]) {
         return res.status(404).render('error', { error: 'Project not found' });
     }
-    const projectData = data.projects[id]; 
+    const projects = projects[id]; 
     const designData = data.designs[id];
     if (!projectData) {
         return res.status(404).render('error', { error: 'Project not found' });
