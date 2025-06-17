@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-  
+
   article.portfolio-intro
 
     h1 My Portfolio
@@ -15,57 +15,20 @@ block content
               h5 characterwork.com
 
             a(href=`https://www.mtdwi.com`)
-              img.thumbnail(src='/static/images/mtdwi.png', alt='site image')
+              img.thumbnail(src='/static/images/mtdwi.png', alt='mtdwi.com site image')
               h5 mtdwi.com
-
-              
-    p Print Work
-      article.portfolio-project-thumbs
-        .projects-box.box.grid
-          .webcell
-            a(href='gileslewey.com')
-              img.thumbnail(src='static/images/4ballsCrop.png', alt='4 balls sample page')
-              h5 Graphic Design
-
-            a(href='gileslewey.com')
-              img.thumbnail(src='static/images/cultureCrop.png', alt='Culture crop sample page')
-              h5 Print Design
-      
-    p Design and Illustration
-      article.portfolio-project-thumbs
-        .projects-box.box.grid
-          .webcell
-            a(href='static/images/4ballsCrop.png')
-              img.thumbnail(src='static/images/4ballsCrop.png', alt='4 balls sample page')
-
-            a(href='static/images/cultureCrop.png')
-              img.thumbnail(src='static/images/cultureCrop.png', alt='Culture crop sample page')
-
-    p Here are a few javascript projects. 
-
-
-      article.portfolio-project-thumbs
-        .projects-box.box.grid
-          each project in projects 
-            .cell
-              a(href=`/project/${project.id}`)
-              img.thumbnail(src=`${project.image_urls[0]}`, alt= `${project.project_name}`)
-              h5 #{project.project_name}
-
-          if designs && designs.length
-            each design in designs
-              li= design.design_name
-          else
-            p No designs available.
           
-      //- article.portfolio-project-thumbs
-      //-   .projects-box.box.grid
-      //-     each design in designs 
-      //-       .cell
-      //-         a(href= `/design/${design.id}`)
-      //-         img.thumbnail(src= `${design.image_urls[0]}`, alt= `${design.design_name}`)
-      //-         h5 #{design.design_name}
+    p Here are some of the javascript projects I have been working on. 
 
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+
+      each project in projects 
+        .cell
+              a(href=`/project/${project.id}`)
+                img.thumbnail(src=`${project.image_urls[0]}`, alt=`${project.project_name}`)
+                h5 #{project.project_name}
 
 
 
