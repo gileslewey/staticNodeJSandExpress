@@ -41,6 +41,10 @@ app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });
 
+app.get('/art', (req, res) => {
+    res.render('art', { projects } );
+});
+
 //error handling 
 
 app.use((req, res, next) => {
