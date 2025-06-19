@@ -10,6 +10,8 @@ const { data }  = require('./data.json');
 
 const { projects } = data;
 
+const { arts } = data;
+
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
@@ -41,8 +43,13 @@ app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });
 
-app.get('/art', (req, res) => {
-    res.render('art', { projects } );
+app.get('/art/:id', (req, res) => {
+
+    const { id } = req.params; 
+    const artData = art[id]; 
+    const {image_urls} = artData;
+
+    res.render('art', artData);
 });
 
 //error handling 

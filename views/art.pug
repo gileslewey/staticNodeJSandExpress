@@ -1,3 +1,11 @@
 extends layout.pug
 
 block art
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+
+      each art in arts 
+        .cell
+              a(href=`/art/${art.id}`)
+                img.thumbnail(src=`${art.image_urls[0]}`, alt=`${art.art_name}`)
