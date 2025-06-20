@@ -43,7 +43,7 @@ app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });
 
-app.get('/art/:id', (req, res) => {
+app.get('/art', (req, res) => {
 
     const { id } = req.params; 
     const artData = art[id]; 
