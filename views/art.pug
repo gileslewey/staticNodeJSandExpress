@@ -3,11 +3,12 @@ extends layout.pug
 block content
 
   h1 Art Gallery
-  .art-gallery
-    each art in arts
-      if art.image_urls && art.image_urls.length
-        each url in art.image_urls
-          img(src=url, alt="artwork")
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+      each art in arts
+        if art.image_urls && art.image_urls.length
+          each url in art.image_urls
+            img(src=url, alt="artwork")
 
 //-   article.portfolio-project-thumbs
 //-     .projects-box.box.grid
