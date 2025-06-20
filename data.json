@@ -59,27 +59,27 @@
       "arts": [
         {
         "id": "0",
-          "image_urls": ["/static/images/3dLogo2.svg"]
+        "image_urls": ["/static/images/3dLogo2.svg"]
         },
         {
         "id": "1",
-          "image_urls": ["/static/images/r4ballsCrop.png"]
+        "image_urls": ["/static/images/4ballsCrop.png"]
         }, 
         {
         "id": "2",
-          "image_urls": ["/static/images/raven.png"]
+        "image_urls": ["/static/images/raven.png"]
         },
         {
         "id": "3",
-          "image_urls": ["/static/images/ccblLogoBasicFour.jpg"]
+        "image_urls": ["/static/images/ccblLogoBasicFour.jpg"]
         },
         {
         "id": "4",
-          "image_urls": ["/static/images/graphicCrop.png"]
+        "image_urls": ["/static/images/graphicCrop.png"]
         },
         {
         "id": "5",
-          "image_urls": ["/static/images/newHorGraphic.png"]
+        "image_urls": ["/static/images/newHorGraphic.png"]
         }
       ]
     }
