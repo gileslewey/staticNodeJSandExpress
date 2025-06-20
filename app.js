@@ -52,7 +52,7 @@ app.get('/artpic/:id', (req, res) => {
     res.render('artpic', artData);
 });
 
-app.get('art', (req, res) => {
+app.get('/art', (req, res) => {
    res.render('art', { arts } );
 });
 //error handling 
