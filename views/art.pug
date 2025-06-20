@@ -6,8 +6,8 @@ block content
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-      .webcell
         each art in arts
+          .cell
             if art.image_urls && art.image_urls.length
               each url in art.image_urls
                 img(src=url, alt="artwork")
