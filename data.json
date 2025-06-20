@@ -63,7 +63,7 @@
         },
         {
         "id": "1",
-        "image_urls": ["/static/images/4ballsCrop.png"]
+        "image_urls": ["/static/images/newHorGraphic.svg"]
         }, 
         {
         "id": "2",
@@ -79,7 +79,7 @@
         },
         {
         "id": "5",
-        "image_urls": ["/static/images/newHorGraphic.svg"]
+        "image_urls": ["/static/images/4ballsCrop.png"]
         }
       ]
     }
