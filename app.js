@@ -43,15 +43,18 @@ app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });
 
-app.get('/art/:id', (req, res) => {
+app.get('/artpic/:id', (req, res) => {
 
     const { id } = req.params; 
     const artData = arts[id]; 
     const {image_urls} = artData;
 
-    res.render('art', artData);
+    res.render('artpic', artData);
 });
 
+app.get('art', (req, res) => {
+   res.render('art', { arts } );
+});
 //error handling 
 
 app.use((req, res, next) => {
@@ -67,12 +70,10 @@ app.use((err, req, res, next) => {
     if (err.status === 404) {
         res.render("page-not-found", {err});
         console.log("404");
-        next();
     } else {
            err.status = 500;
         res.render("error", {err});
         console.log("500");
-        next();
     }
 });
 
