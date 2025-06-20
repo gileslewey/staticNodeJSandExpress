@@ -75,11 +75,11 @@
         },
         {
         "id": "4",
-        "image_urls": ["/static/images/graphicCrop.png"]
+        "image_urls": ["/static/images/verGraphic.svg"]
         },
         {
         "id": "5",
-        "image_urls": ["/static/images/newHorGraphic.png"]
+        "image_urls": ["/static/images/newHorGraphic.svg"]
         }
       ]
     }
