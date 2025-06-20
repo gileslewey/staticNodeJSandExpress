@@ -46,7 +46,7 @@ app.get('/layout', (req, res) => {
 app.get('/art', (req, res) => {
 
     const { id } = req.params; 
-    const artData = art[id]; 
+    const artData = arts[id]; 
     const {image_urls} = artData;
 
     res.render('art', artData);
