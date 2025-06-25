@@ -75,7 +75,7 @@
         },
         {
         "id": "4",
-        "image_urls": ["/static/images/graphicFull.png"]
+        "image_urls": ["/static/images/verGraphic.svg"]
         },
         {
         "id": "5",
@@ -83,11 +83,11 @@
         },
         {
         "id": "6",
-        "image_urls": ["/static/images/verGraphic.svg"]
+        "image_urls": ["/static/images/graphicFull.png"]
         },
         {
         "id": "7",
-        "image_urls": ["/static/images/inuit.jpeg"]
+        "image_urls": ["/static/images/inuit.jpg"]
         },
         {
         "id": "8",
