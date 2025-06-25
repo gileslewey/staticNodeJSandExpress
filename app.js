@@ -12,6 +12,8 @@ const { projects } = data;
 
 const { arts } = data;
 
+const { prints } = data;
+
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
@@ -48,8 +50,19 @@ app.get('/artpic/:id', (req, res) => {
     const { id } = req.params; 
     const artData = arts[id]; 
     const {image_urls} = artData;
+    console.log(image_urls);
 
     res.render('artpic', artData);
+});
+
+app.get('/prints/:id', (req, res) => {
+
+    const { id } = req.params; 
+    const printData = prints[id]; 
+    const {image_urls} = printData;
+    console.log(image_urls);
+
+    res.render('prints', printData);
 });
 
 app.get('/art', (req, res) => {
