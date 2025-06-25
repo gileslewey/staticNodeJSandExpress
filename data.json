@@ -71,7 +71,7 @@
         },
         {
         "id": "3",
-        "image_urls": ["/static/images/ccblLogoBasicFour.jpg"]
+        "image_urls": ["/static/images/4ballsFull.png"]
         },
         {
         "id": "4",
@@ -80,6 +80,18 @@
         {
         "id": "5",
         "image_urls": ["/static/images/farArtPic.png"]
+        },
+        {
+        "id": "6",
+        "image_urls": ["/static/images/ccblLogoBasicFour.jpg"]
+        },
+        {
+        "id": "7",
+        "image_urls": ["/static/images/inuit.png"]
+        },
+        {
+        "id": "8",
+        "image_urls": ["/static/images/raven.png"]
         }
       ]
     }
