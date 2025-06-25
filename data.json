@@ -67,7 +67,7 @@
         }, 
         {
         "id": "2",
-        "image_urls": ["/static/images/raven.png"]
+        "image_urls": ["/static/images/closeArtPic.png"]
         },
         {
         "id": "3",
@@ -79,7 +79,7 @@
         },
         {
         "id": "5",
-        "image_urls": ["/static/images/4ballsFull.png"]
+        "image_urls": ["/static/images/farArtPic.png"]
         }
       ]
     }
