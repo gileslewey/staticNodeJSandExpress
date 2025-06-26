@@ -45,6 +45,7 @@ app.get('/layout', (req, res) => {
     res.render('layout', { projects } );
 });
 
+
 app.get('/artpic/:id', (req, res) => {
 
     const { id } = req.params; 
@@ -53,6 +54,11 @@ app.get('/artpic/:id', (req, res) => {
     console.log(image_urls);
 
     res.render('artpic', artData);
+});
+
+
+app.get('/print', (req, res) => {
+    res.render('layout', { prints } );
 });
 
 app.get('/prints/:id', (req, res) => {
