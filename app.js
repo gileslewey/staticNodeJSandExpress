@@ -58,7 +58,7 @@ app.get('/artpic/:id', (req, res) => {
 
 
 app.get('/print', (req, res) => {
-    res.render('layout', { prints } );
+    res.render('print', { prints } );
 });
 
 app.get('/prints/:id', (req, res) => {
