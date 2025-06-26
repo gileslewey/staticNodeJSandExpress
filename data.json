@@ -93,6 +93,17 @@
         "id": "8",
         "image_urls": ["/static/images/raven.png"]
         }
-      ]
+      ],
+        "prints": [
+        {
+        "id": "0",
+        "image_urls": ["/static/images/tornadoCrop.png"]
+        },
+        {
+        "id": "1",
+        "image_urls": ["/static/images/cultureCrop.png"]
+        }
+        ]
+
     }
 }
