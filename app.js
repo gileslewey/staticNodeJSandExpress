@@ -46,14 +46,13 @@ app.get('/layout', (req, res) => {
 });
 
 
-app.get('/artpic/:id', (req, res) => {
+app.get('/arts/:id', (req, res) => {
 
     const { id } = req.params; 
     const artData = arts[id]; 
     const {image_urls} = artData;
-    console.log(image_urls);
 
-    res.render('artpic', artData);
+    res.render('arts', artData);
 });
 
 
@@ -66,7 +65,6 @@ app.get('/prints/:id', (req, res) => {
     const { id } = req.params; 
     const printData = prints[id]; 
     const {image_urls} = printData;
-    console.log(image_urls);
 
     res.render('prints', printData);
 });
