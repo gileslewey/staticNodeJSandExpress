@@ -16,7 +16,7 @@ block art
         each art in arts 
           .cell
           a(href=`/arts/${art.id}`)
-           img.thumbnail(src=`${print.image_urls[0]}`, alt=`${print.print_name}`)
+           img.thumbnail(src=`${art.image_urls[0]}`, alt=`${art.art_name}`)
            h5 #{art.art_name}
 
 
