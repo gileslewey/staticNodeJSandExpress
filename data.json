@@ -105,7 +105,7 @@
         },
         {
         "id": "2",
-        "image_urls": ["/static/images/girlPoint.png"]
+        "image_urls": ["/static/images/girlPointSmall.png", "/static/images/girlPoint.png"]
         }
         ]
 
