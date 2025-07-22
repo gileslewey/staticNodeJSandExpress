@@ -7,7 +7,7 @@ block content
     .projects-box.box.grid
 
       each print in prints 
-        .cell
+        .print-cell
           a(href=`/prints/${print.id}`)
            img.thumbnail(src=`${print.image_urls[0]}`, alt=`${print.print_name}`)
            h5 #{print.print_name}

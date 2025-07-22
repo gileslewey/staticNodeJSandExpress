@@ -345,6 +345,11 @@ nav a span {
     margin: 0 0 15px;
   }
 
+  .print-cell  {
+    margin: 0 0 25px;
+    border: 1.5px solid #808080;
+  }
+
   .cell h5 {
     font-size: 1.25rem;
   }
