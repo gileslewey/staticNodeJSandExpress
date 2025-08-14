@@ -97,11 +97,11 @@
         "prints": [
         {
         "id": "0",
-        "image_urls": ["/static/images/tornadoCrop.png"]
+        "image_urls": ["/static/images/tornadoCrop.png", "/static/images/tornadoCrop.png"]
         },
         {
         "id": "1",
-        "image_urls": ["/static/images/cultureCrop.png"]
+        "image_urls": ["/static/images/cultureCrop.png", "/static/images/cultureCrop.png"]
         },
         {
         "id": "2",
