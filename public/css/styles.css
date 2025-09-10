@@ -368,6 +368,12 @@ nav a span {
   }
 }
 
+.project-tech-links-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* optional: adds space between items */
+  padding: 0;
+}
 
 /* 
   Desktop layout styles 
