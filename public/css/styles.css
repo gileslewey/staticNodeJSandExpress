@@ -2,8 +2,8 @@
 /*
   Main styles
 */
-body {
-  background: red !important;
+* {
+  outline: 2px solid red !important;
 }
 
 * {
