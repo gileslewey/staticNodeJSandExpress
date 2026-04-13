@@ -323,6 +323,7 @@ nav a span {
 /* 
   Tablet layout styles 
 */
+/*
 @media screen and (min-width: 768px) {
   .sidebar h5 {
     font-size: 1.25rem;
@@ -374,6 +375,7 @@ nav a span {
   padding: 0;
   list-style: none; /* optional: removes bullets */
 }
+*/
 
 /* 
   Desktop layout styles 
