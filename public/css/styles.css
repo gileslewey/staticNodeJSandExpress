@@ -372,14 +372,12 @@ nav a span {
   display: flex;
   flex-wrap: wrap;
   gap: 10px; /* optional: adds space between items */
-  padding: 0;
-  list-style: none; /* optional: removes bullets */
-}
-*/
+ 
 
 /* 
   Desktop layout styles 
 */
+/*
 @media screen and (min-width: 1024px) {
   .sidebar {
     left: 0;
@@ -398,3 +396,4 @@ nav a span {
     max-width: 1200px;
   }
 }
+*/
