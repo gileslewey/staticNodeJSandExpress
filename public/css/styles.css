@@ -255,15 +255,22 @@ nav a span {
   width: 100%;
 }
 
+.webcell {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
 .webcell a {
-  display: inline-block;
-  padding-right: 6rem;
-  /* padding-bottom: 10px; */
+  display: block;
+  padding-right: 0;
 }
 
 .webcell img {
+  width: 100%;
   max-width: 350px;
-  min-width: 100px;
+  min-width: 0;
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
