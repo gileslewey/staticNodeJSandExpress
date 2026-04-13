@@ -131,13 +131,12 @@ nav a span {
   position: absolute;
   top: 0;
   left: -300px;
-  bottom: 0;
-  min-width: 300px;
-  max-width: 300px;
-  height: 100%;
-  min-height: 100%;
+  width: 300px;
+  min-height: 100vh;
+  height: auto;
   padding: 20px;
   background: #000;
+  overflow-y: auto;
 }
 
 .sidebar-info-box {
